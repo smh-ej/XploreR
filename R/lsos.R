@@ -1,6 +1,21 @@
-# List of Objects Function from SO --------------------------------------------------
-# https://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session
-
+#' List Objects in Global Environment
+#' 
+#' This \code{lsos} function summarizes all objects found in the global environment into a \code{data frame}.
+#' If using \code{RStudio}, this information can be viewed using the "Environment" Tab in the GUI. 
+#'
+#' See this Stack Overflow post: https://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session
+#'
+#' @examples
+#' data(iris)
+#' data(airquality)
+#' 
+#' x <- letters[1:15]
+#' y <- matrix(data = rnorm(n = 50),ncol = 10)
+#' 
+#' lsos(n = 50)
+#' 
+#' @export
+#' 
 .ls.objects <- function (pos = 1, pattern, order.by,
                          decreasing=FALSE, head=FALSE, n=5) {
   napply <- function(names, fn) sapply(names, function(x)

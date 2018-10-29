@@ -38,4 +38,4 @@ Wilson G, Bryan J, Cranston K, Kitzes J, Nederbragt L, et al. (2017) Good enough
 Created on: ", format(Sys.time(), "%X %b %d %Y")),
            fileCon)
 close(fileCon)
-rm(create_dir)
+rm(create_dir, fileCon)

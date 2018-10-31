@@ -9,7 +9,7 @@
 #' @return Returns a \code{data frame} with four columns, each row displays the number and percentage of missing
 #' values, and the percentage of existing (non-missing) values for each variable within the data frame
 #'
-#' @import purrr, tidyr, dplyr
+#' @import purrr tidyr dplyr
 #'
 #'
 #' @examples
@@ -38,7 +38,7 @@ missing_df <- function(df, vars = names(df)) { #identifies missing values in col
 #' @return Returns a \code{data frame} with two columns where each row is a variable from the data frame of interest
 #' and the data type ()
 #'
-#' @import purrr, tidyr, dplyr
+#' @import purrr tidyr dplyr
 #'
 #' @export
 #'
@@ -64,7 +64,7 @@ type_df <- function(df, vars = names(df)) { #identifies the class of columns in 
 #' @return returns a \code{data frame} with a \code{logical}  column containing whether the specified
 #' columns have a foreign label associated it.
 #'
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #'
 #' @export
 #'
@@ -92,7 +92,7 @@ lab_foreign_df <- function(df, vars = names(df)) { #identifies foreign labels (i
 #' @return returns a \code{data frame} where column from \code{df} is a row and
 #' information on the number of missing values, data type, and foreign labels are specified.
 #'
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #'
 #' @export
 #'
@@ -135,7 +135,7 @@ describe_df <- function(df, vars = names(df), ...) {
 #' @return returns a \code{ggplot2} plot displaying the percentage of missing values and data types
 #' for each column contained in the data frame
 #'
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #'
 #' @export
 #'

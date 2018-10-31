@@ -9,7 +9,7 @@
 #' the corresponding foreign label (SPSS, Stata, SAS) for any applicable columns. 
 #' Any columns with no foreign labels return \code{NA} values for the \code{column_labels} column.  
 #' 
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #' 
 #'
 #' @examples
@@ -47,7 +47,7 @@ spss_col_labels <- function(df) {
 #' found in the specific column. 
 #' If there are no foreign labels, then a zero-dimnensional \code{tibble} is returned
 #' 
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #' 
 #'
 #' @examples
@@ -73,7 +73,7 @@ spss_code_labels <- function(df, vars = NULL) {
 #' the corresponding foreign label (SPSS, Stata, SAS) for any applicable columns. 
 #' Any columns with no foreign labels return \code{NA} values for the \code{column_labels} column.  
 #' 
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #' 
 #'
 #' @examples
@@ -105,7 +105,7 @@ spss_col_labels_vec <- function(df, col_name = NULL) {
 #' found in the specific column. 
 #' If there are no foreign labels, then a zero-dimnensional \code{tibble} is returned
 #' 
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #' 
 #'
 #' @examples

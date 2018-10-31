@@ -19,15 +19,13 @@
 #' contain the respective foreign labels from the \code{haven} package for each row
 #' based on the specified column.  
 #' 
-#' @import purrr, tidyr, dplyr, haven
+#' @import purrr tidyr dplyr haven
 #' 
 #' @examples
 #' mutate_lab_foreign(airquality, Solar.R) #throws error because no columns contain foreign labels
 #' 
 #' @export
 #' 
-
-
 mutate_lab_foreign <- function(df, col_name = NULL, regex = NULL) {
   
   if (is.null(regex)) {

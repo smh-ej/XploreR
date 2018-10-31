@@ -24,9 +24,8 @@
 #' is thrown and returns potential columns that you will have to remove
 #' for the function to work. 
 #' 
-#' @import purrr, tidyr, dplyr
+#' @import purrr tidyr dplyr
 #' 
-#'
 #' @examples
 #' summarise_df(airquality)
 #' 
@@ -69,7 +68,7 @@ summarise_df <- function(df, vars = names(df)) {
 #' is thrown and returns potential columns that you will have to remove
 #' for the function to work. 
 #' 
-#' @import purrr, tidyr, dplyr
+#' @import purrr tidyr dplyr
 #' 
 #'
 #' @examples

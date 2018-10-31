@@ -25,7 +25,7 @@
 #' 
 #' @seealso \code{\link{cut}}, \code{\link{dplyr::mutate}}
 #' 
-#' #' @import dplyr
+#' @import dplyr
 #' 
 #' @examples 
 #' ## Use of the \code{schizophrenia} dataset from the \code{HSAUR} package
@@ -106,6 +106,3 @@ age_categorize <- function(df, col_name = NULL, method = NULL, var_name = NULL) 
   }
   
 }
-
-# Example Check:
-# age_categorize(deaths2015,"D4",1) %>% select(age_cat) %>% table()

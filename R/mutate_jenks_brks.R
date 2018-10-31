@@ -16,7 +16,7 @@
 #' Jenks breaks and corresponding labels for each `factor` level
 #'
 #'
-#' @import purrr, tidyr, dplyr
+#' @import purrr tidyr dplyr classInt
 #'
 #' @examples
 #' #Apply Jenks breaks on the Solar Radiation column frmo the airqualtiy dataset

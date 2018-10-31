@@ -1,0 +1,17 @@
+Package: XploreR
+Type: Package
+Title: Standardized Functions
+Version: 0.1.0
+Author: Eugene Joh
+Maintainer: Eugene Joh <yourself@somewhere.net>
+Description: This is a test for GitHub migration and release
+License: GNU Public
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  dplyr, 
+  tidyr,
+  purrr,
+  ggplot2,
+  haven
+RoxygenNote: 6.1.0
